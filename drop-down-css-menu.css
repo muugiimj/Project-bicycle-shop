@@ -1,0 +1,33 @@
+.navButton {
+    background-color: teal;
+    padding: 11px 25px;
+    width: 100px;
+    display: inline-block;
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+    color: wheat;
+}
+/* This turns the dropdown off when not used */
+.dropdown-box {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    padding-top: 15px;
+    margin-left: -25px;
+}
+/* This turns the dropdown on during hover */
+.navButton:hover .dropdown-box {
+    display: block;
+}
+
+.dropdown-box .navButton {
+    background-color: rosybrown;
+}
+
+.dropdown-box .navButton:hover {
+    background-color: aliceblue;
+    transition-duration: 500ms;
+}
